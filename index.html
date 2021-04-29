@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Codificador</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <form>
+          <h1 class="title">Mensagem</h1>
+          <input
+            class="mensagemTexto"
+            id="mensagem"
+            requeried
+            type="text"
+            placeholder="Escreva sua mensagem"
+          />
+          <br />
+          <label for="">Escolha sua codificação:</label> <br />
+
+          <select id="valorDoSelect">
+            <option value="0">Escolha</option>
+            <option value="1">Cifra de César</option>
+            <option value="2">base64</option>
+          </select>
+          <br />
+
+          <div
+            id="invisivelParaUsuario"
+            class="invisivel espacamentoQtdPosicoes"
+          >
+            <label for="qtdPosicoes">Selecione a quantidade de casas:</label>
+            <br />
+            <input class="tamanhoPosicoes" id="qtdPosicoes" type="number" />
+          </div>
+
+          <div class="boxCodificar">
+            <input
+              type="radio"
+              id="codificar"
+              name="type"
+              value="codificar"
+              onclick="pegaValorRadio()"
+            />
+            <label for="codificar">Codificar</label>
+            <input
+              type="radio"
+              id="decodificar"
+              name="type"
+              value="decodificar"
+              onclick="pegaValorRadio()"
+            />
+            <label for="decodificar">Decodificar</label><br />
+          </div>
+
+          <div class="botoes invisivel" id="botaoInvisivelCodificar">
+            <button id="btnCodificar">Codificar Mensagem</button>
+          </div>
+
+          <div class="botoes invisivel" id="botaoInvisivelDecodificar">
+            <button id="btnDecodificar">Decodificar Mensagem</button>
+          </div>
+
+          <h1 class="title">Mensagem Codificada</h1>
+          <p class="resultadoCodigo" id="resultado"></p>
+        </form>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

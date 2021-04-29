@@ -1,0 +1,119 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(../img/bg-home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  height: 100vh;
+}
+
+.title {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+label {
+  color: #fff;
+}
+
+section {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background: rgba(104, 140, 206, 0.2);
+  padding: 50px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.mensagemTexto {
+  width: 400px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+::placeholder {
+  color: #0b305c;
+}
+
+label {
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+select {
+  margin-top: 20px;
+  width: 150px;
+  height: 25px;
+}
+
+.boxCodificar {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.espacamentoQtdPosicoes {
+  margin-top: 20px;
+}
+
+.invisivel {
+  margin-top: 45px;
+  display: none;
+}
+
+.tamanhoPosicoes {
+  width: 50px;
+  margin-top: 10px;
+}
+
+.resultadoCodigo {
+  margin-top: 20px;
+}
+
+.resultadoCodigo input {
+  width: 400px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px;
+  margin-top: 20px;
+}
+
+.botoes button {
+  width: 220px;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.resultadoCodigo {
+  width: 400px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #0b305c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  margin-top: 20px;
+}
